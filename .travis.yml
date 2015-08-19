@@ -4,11 +4,14 @@ rust:
 matrix:
   allow_failure:
     - rust: nightly
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - gcc-arm-none-eabi
 
 before_install:
-  - sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded -y
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq gcc-arm-none-eabi
   - mkdir build
 
 script: make build/main.elf
