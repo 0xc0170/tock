@@ -11,4 +11,4 @@ before_install:
   - wget https://launchpad.net/gcc-arm-embedded/4.9/4.9-2014-q4-major/+download/gcc-arm-none-eabi-4_9-2014q4-20141203-linux.tar.bz2
   - tar -xvf gcc-arm-none-eabi-4_9-2014q4-20141203-linux.tar.bz2
 
-script: make TOOLCHAIN=./gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi- build/main.elf
+script: make TOOLCHAIN=./gcc-arm-none-eabi-4_9-2014q4/arm-none-eabi/bin/arm-none-eabi- build/main.elf
